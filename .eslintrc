@@ -1,0 +1,61 @@
+{
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "rules": {
+    "quotes": ["error", "double"],
+    "indent": ["error", 4, { "SwitchCase": 1 }],
+    "padded-blocks": "off",
+    "comma-dangle": ["error", {
+      "arrays": "always-multiline",
+      "objects": "always-multiline",
+      "exports": "always-multiline",
+      "functions": "ignore"
+    }
+    ],
+    "import/no-named-as-default": "off",
+    "import/no-extraneous-dependencies": ["error", {
+      "devDependencies": ["!src/**/*.test.+(js|jsx)"]
+    }],
+    "react/require-default-props": "off",
+    "react/no-array-index-key": "off",
+    "react/no-unused-prop-types": ["error", { "skipShapeProps": true }],
+    "react/jsx-indent": ["error", 4],
+    "react/jsx-indent-props": ["error", 4],
+    "react/jsx-wrap-multilines": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/no-noninteractive-element-to-interactive-role": "off",
+    "new-cap": "off",
+    "linebreak-style": "off",
+    "no-multiple-empty-lines": ["error", {
+      "max": 1,
+      "maxEOF": 1
+    }],
+    "no-plusplus": "off",
+    "no-param-reassign": "off",
+    "no-restricted-properties": "off",
+    "no-restricted-syntax": "off",
+    "no-useless-return": "off",
+    "no-undef": "error",
+    "max-len": ["error", 120]
+  },
+  "globals": {
+    "require": true,
+    "fetch": true
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": {
+          "resolve": {
+            "extensions": [".js", ".jsx"],
+            "modules": ["src", "node_modules"]
+          }
+        }
+      }
+    }
+  }
+}
