@@ -23,8 +23,9 @@
         position: relative;
         width: 100%;
         height: auto;
-        min-height: 320px;
-        min-width: 480px;
+        min-height: 270px;
+        min-width: 320px;
+        overflow: hidden;
 
         transition-property: min-height, max-height, height, width, min-width, max-width;
         transition-duration: 300ms;

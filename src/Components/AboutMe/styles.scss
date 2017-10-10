@@ -1,0 +1,38 @@
+@import "Styles/palette.scss";
+
+.container {
+    .content {
+        display: flex;
+        flex-direction: column;
+        min-width: 20em;
+        max-width: 63em;
+        margin: 0 auto 20px;
+        padding: 0 20px;
+
+        .about {
+            align-self: center;
+            flex: 1 0 auto;
+        }
+
+        .profileImage {
+            display: flex;
+            align-self: center;
+            flex: 1 0 auto;
+
+            img{
+                height: 10em;
+                width: 10em;
+                border-radius: 100%;
+            }
+        }
+        .details {
+            text-align: center;
+            align-self: center;
+            flex: 1 0 auto;
+        }
+
+        @media screen and (min-width: 40.5em) {
+            flex-direction: row;
+        }
+    }
+}

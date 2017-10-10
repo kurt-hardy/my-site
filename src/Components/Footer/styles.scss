@@ -1,0 +1,9 @@
+@import "Styles/palette.scss";
+
+.container {
+    background-color: $dark-slate-grey;
+    color: $light-grey;
+    display: flex;
+    flex-direction: column;
+
+}
