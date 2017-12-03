@@ -1,8 +1,8 @@
-@import "Styles/palette.scss";
+@import "variables";
 
 .heading {
     text-align: center;
-    padding-top: 0.3em;
+    padding-top: 1em;
     font-size: 3em;
     font-weight: 300;
     color: $meat-brown;

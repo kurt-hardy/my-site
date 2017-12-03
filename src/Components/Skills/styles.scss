@@ -1,4 +1,4 @@
-@import "Styles/palette.scss";
+@import "variables";
 
 .container {
     background: $light-grey;
@@ -8,18 +8,27 @@
         min-width: 20em;
         max-width: 63em;
         margin: 0 auto;
-        padding: 0 20px 20px;
+        padding: 0 20px 60px;
 
         .quote {
+            @media screen and (min-width: 401px) {
+                font-size: 1em;
+            }
+
             text-align: center;
-            font-size: 1em;
             padding: 1em;
-            margin: 0 auto 20px;
-            border-bottom: 1px solid $dark-slate-grey;
+            margin: 0 auto;
             font-style: italic;
+            transition: all 200ms ease;
+            font-size: 14px;
 
             a {
+                @media screen and (min-width: 801px) {
+                    display: inline-block;
+                }
+
                 display: block;
+                transition: all 200ms ease;
 
                 &:hover {
                     color: $light-slate-grey;
@@ -27,27 +36,93 @@
             }
         }
 
-        .column {
+        hr {
+            margin-bottom: 20px;
+            opacity: 0.6;
+        }
+
+        .table {
+            @media screen and (min-width: 801px) {
+                flex-direction: row;
+
+                .column {
+                    flex: 1 1 auto;
+                    width: 45%;
+                    margin: 10px 20px;
+
+                    .row {
+                        p {
+                            width: 65%;
+                        }
+                    }
+                }
+
+                hr {
+                    display: none;
+                }
+            }
+
+            transition: all 200ms ease;
             display: flex;
             flex-direction: column;
 
-            .item {
+            .column {
                 display: flex;
-                justify-content: space-between;
-                flex: 1 0 auto;
-                padding-bottom: 10px;
+                flex-direction: column;
+                transition: all 200ms ease;
+
+                .row {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex: 1 0 auto;
+                    padding: 5px 2px;
+                    transition: all 200ms ease;
+                    cursor: default;
+                    user-select: none;
+
+                    &:hover {
+                        background-color: $wild-blue-yonder;
+                        border-radius: 2px;
+
+                        svg {
+                            margin-left: 2px;
+                        }
+                    }
+
+                    p {
+                        width: 55%;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        transition: all 200ms ease;
+                    }
+
+                    .stars {
+                        color: $light-slate-grey;
+
+                        .filled {
+                            color: $dark-slate-grey;
+                        }
+
+                        svg {
+                            height: 22px;
+                            width: 22px;
+                            transition: all 200ms ease;
+                        }
+                    }
+                }
+
+                hr {
+                    margin: 15px 0;
+                }
             }
         }
 
         .disclaimer {
+            padding-top: 10px;
             font-size: 0.7em;
+            text-align: center;
         }
     }
-
-    @media screen and (min-width: 40.5em) {
-        h2 {
-            font-size: 2em;
-        }
-    }
-
 }

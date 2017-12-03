@@ -1,12 +1,8 @@
-@import "Styles/palette.scss";
+@import "variables";
 
 .container {
     width: 100%;
     position: relative;
-
-    transition-property: min-height, max-height, height, width, min-width, max-width;
-    transition-duration: 300ms;
-    transition-timing-function: ease-in-out;
 
     .modal {
         position: absolute;
@@ -26,9 +22,5 @@
         min-height: 270px;
         min-width: 320px;
         overflow: hidden;
-
-        transition-property: min-height, max-height, height, width, min-width, max-width;
-        transition-duration: 300ms;
-        transition-timing-function: ease-in-out;
     }
 }

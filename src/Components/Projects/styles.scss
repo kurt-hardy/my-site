@@ -1,5 +1,6 @@
-@import "Styles/palette.scss";
+@import "variables";
 
 .container {
-
+    background-color: red;
+    padding-bottom: 40px;
 }

@@ -9,18 +9,19 @@ const AboutMe = () => (
         <div className={styles.content}>
             <div className={styles.about}>
                 <p>
-                    A software developer from Blackburn, England living in Ontario Canada who uses the .NET stack and
-                    the modern Javascript world (React.js, webpack, Redux, etc). I enjoy developing, automating and
-                    testing code (front and back end). I have a good knowledge of front-end techniques and unit testing
-                    API&apos;s; I&apos;m a team player and don&apos;t believe in knowledge silo&apos;s.
+                    A software developer from Blackburn, England living in Ontario, Canada. Someone who uses the .NET
+                    stack and the modern Javascript world (React.js, webpack, Redux, etc). I enjoy developing,
+                    automating and testing code (front and back end).
+                    I have a good knowledge of front-end techniques, unit testing both components and API&apos;s.
+                </p>
+                <p>
+                    I am a big team player and I do not believe in knowledge silo&apos;s. I love training people
+                    and helping them learn and understand what I have learnt.
                 </p>
 
                 <p>
-                    When I&apos;m not coding or pushing pixels, I may be on a squash court or reading a crime novel
-                    (A new favourite author of mine is <a target="blank" href="http://www.leechild.com">Lee Child</a>
-                    and my favourite author
-                    is <a target="blank" href="http://www.tessgerritsen.com">Tess gerritsen).</a>. I also love films,
-                    music, dogs and cooking.
+                    When I&apos;m not coding or at my desk, I may be on a squash court, reading or looking for a
+                    new whiskey bar/craft beer bar. I also love films, music, dogs and cooking.
                 </p>
             </div>
 
